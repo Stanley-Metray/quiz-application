@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDb Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="cpp-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="ancient-india-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>What kind of database MongoDB is?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Graph Oriented</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Document Oriented</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Key Value Pair</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Column Based</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">MongoDB stores data in JSON structure based documents. These documents in turn contains data in form of key value pairs.</div>
+            </section>
+
+            <section>
+                <p>Within how much time does MongDB writes are written to the journal?</p>
+                <ul>
+                    <li><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>60 s</span></li>
+                    <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>100 ms</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>1 s</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>100 s</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">Writes are physically written to the journal within 100 milliseconds, by default.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is not a system collection in MongoDB?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>database.system.indexes</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>database.system.namespaces</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>admin.system.users</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>admin.system.preferences</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">There is no system collection to store database preferences.</div>
+            </section>
+        
+            <section>
+                <p>What is a replica set node which does not maintain its own data but exists only for voting purpose called?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Secondary</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Arbiter</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Delayed</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Hidden</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">We may add an extra mongod instance to a replica set as an arbiter. Arbiters do not maintain a data set. Arbiters only exist to vote in elections. If your replica set has an even number of members, add an arbiter to obtain a majority of votes in an election for primary. Arbiters do not require dedicated hardware</div>
+            </section>
+
+            <section>
+                <p>Which format/standard is used by MongoDB internally to store documents?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>BSON</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>JSON</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>JSON - Extended</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>B+ Trees</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">MongoDB uses BSON, a binary object format similar to, but more expressive than JSON.</div>
+            </section>
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

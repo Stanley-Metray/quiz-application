@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeJs Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>Which of the following statement is correct?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>js is Server Side Language.</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>js is the Client Side Language.</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>js is both Server Side and Client Side Language</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above.</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. Node.js is Server Side Language.</div>
+            </section>
+
+            <section>
+                <p>What does the REPL stand for?</p>
+                <ul>
+                    <li class="true black"><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>REPL stands for "Read Eval Print Loop."</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>REPL stands for "Research Eval Program Learn."</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>REPL stands for "Read Earn Point Learn."</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>REPL stands for "Read Eval Point Loop."</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. REPL stands for "Read Eval Print Loop".</div>
+            </section>
+
+            <section>
+                <p>Which of the following command is used to start a REPL session?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ node</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ node start</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ node repl</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ node console</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. We can start REPL simply by running node on shell/console without any argument.</div>
+            </section>
+        
+            <section>
+                <p>Which of the following command is used to install the Node.js express module?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ npm install express</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ node install express</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ install express</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. The $ npm install express command is used to install the Node.js express module.</div>
+            </section>
+
+            <section>
+                <p>What is Callback?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The callback is a technique in which a method calls back the caller method.</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The callback is an asynchronous equivalent for a function.</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Both of the above.</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above.</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">B is the correct option. The callback is an asynchronous equivalent for a function.</div>
+            </section>
+
+            <section>
+                <p>Which of the following extension is used to save the Node.js files?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.js</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.node</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.java</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.txt</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. The ".js" extension is used to save the Node.js files.</div>
+            </section>
+
+            <section>
+                <p>The Node.js modules can be exposed using:</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>zlib</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>https</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>dgram</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>fsread</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">D is the correct option. The "fsread" is not a built-in node module.</div>
+            </section>
+
+            <section>
+                <p>What does the fs module stand for?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>File Service</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>File System</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>File Store</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>File Sharing</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">B is the correct option. The fs module stands for File System.</div>
+            </section>
+
+            <section>
+                <p> Which of the following template engines can be used with Node.js?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Jade</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Vash</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Handlebars</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">C is the correct option. Handlebars are the template engines that can be used with Node.js.</div>
+            </section>
+
+            <section>
+                <p>Which of the following code print the platform of operating system?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>console.log('platform : ' + os.platform);</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>console.log('platform : ' + os.platform());</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>console.log('platform : ' + os.getPlatform());</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above.</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">B is the correct option. The os.platform() returns the operating system platform.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

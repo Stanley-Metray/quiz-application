@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>HTML stands for -</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>HighText Machine Language</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>HyperText and links Markup Language</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>HyperText Markup Language</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of these</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">HTML is an acronym that stands for HyperText Markup Language, which is used for creating web pages and web applications.</div>
+            </section>
+
+            <section>
+                <p>The correct sequence of HTML tags for starting a webpage is -</p>
+                <ul>
+                    <li><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>Head, Title, HTML, body</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>HTML, Body, Title, Head</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>HTML, Head, Title, Body</span></li>
+                    <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>HTML, Head, Title, Body</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The correct sequence of HTML tags to start a webpage is html, head, title, and body.</div>
+            </section>
+
+            <section>
+                <p>Which of the following element is responsible for making the text bold in HTML?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;pre&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;a&gt;</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;b&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;br&gt;</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The &lt;b&gt; (bold tag) tag in HTML is used to display the written text in bold format.</div>
+            </section>
+        
+            <section>
+                <p>Which character is used to represent the closing of a tag in HTML?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>\</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>!</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>/</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The forward-slash (/) character is used to indicate the closing of a tag in HTML.</div>
+            </section>
+
+            <section>
+                <p>How to create a hyperlink in HTML?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span> &lt;a href = "www.javatpoint.com"> javaTpoint.com &lt;/a&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;a url = "www.javatpoint.com" javaTpoint.com /a&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;a link = "www.javatpoint.com"> javaTpoint.com &lt;/a&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;a www.javatpoint.com javaTpoint.com a&gt;</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The "function" and "var" both are the Declaration statements. These both are used for defining, and declaring variable, function in anywhere in the program.</div>
+            </section>
+
+            <section>
+                <p>How to create an ordered list (a list with the list items in numbers) in HTML?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;ul&gt;</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;ol&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;li&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;i&gt;</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The anchor tag and the href attribute is used to create the link in HTML.</div>
+            </section>
+
+            <section>
+                <p>Which of the following element is responsible for making the text italic in HTML?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;i&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;italic&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;it&gt;</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>&lt;pre&gt;</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The (italic tag) tag in HTML is used to display the written text in italic format.</div>
+            </section>
+
+            <section>
+                <p>&lt;input&gt; is -</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>a format tag.</span></li>
+                    <li  class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>an empty tag.</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The &lt;input&gt; tag in HTML is used to represent a form input control in HTML document.</div>
+            </section>
+
+            <section>
+                <p>HTML tags are enclosed in-</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span># and #</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>{ and }</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>! and ?</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>< and ></span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">All HTML tags must be enclosed within angular < > brackets.</div>
+            </section>
+
+            <section>
+                <p>The &lt;hr&gt; tag in HTML is used for -</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>new line</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>vertical ruler</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>new paragraph</span></li>
+                    <li  class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>horizontal ruler</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The &lt;hr&gt; tag is used to specify a paragraph-level thematic break in HTML document. It is called a horizontal rule and draws a horizontal line.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

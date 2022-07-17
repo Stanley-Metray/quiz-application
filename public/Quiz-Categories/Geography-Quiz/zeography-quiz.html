@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geography Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="canister">
+      <!-- Top Menu Bar-->
+      <div class="chain topMenu" id="topMenu"><span class="logo"><i>quiz.com</i></span>
+        <ul id="topMenuItems">
+          <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+          <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+          <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+          <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+          <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+          <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+        </ul>
+        <button class="toggleMenu"><i class="fas fa-bars" id="toggleTopMenu"></i></button>
+      </div>
+      <!-- Left Menu Bar-->
+      <nav class="chain leftMenu" id="leftMenu">
+        <ul>
+          <li><a id="loadCQuiz" href="zeography-quiz.html">Geography Quiz</a></li>
+        </ul>
+      </nav>
+      <!-- Main Content i.e Quiz Quetions and Answers Section-->
+      <main class="chain main" id="main">
+        <section>
+          <p>The great Victoria Desert is located in</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Canada</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>West Africa</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Australia</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>North America</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>The intersecting lines drawn on maps and globes are</p>
+          <ul>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>latitudes</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>longitudes</span></li>
+            <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>geographic grids</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>The landmass of which of the following continents is the least?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Africa</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Asia</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Australia</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Europe</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>Which of the following is tropical grassland?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Taiga</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Savannah</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Pampas</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Prairies</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>The iron and steel industries of which of the following countries are almost fully dependent on imported raw materials?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Britain</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Japan</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Poland</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Germany</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>The temperature increases rapidly after</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Ionosphere</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Exosphere</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Stratosphere</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Troposphere</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>The humidity of the air depends upont</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Temperature</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Location</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Weather</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>The largest glaciers are</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Mountain glaciers</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Alpine glaciers</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Continental glaciers</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Piedmont glaciers</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">The largest glacial bodies, ice sheets or continental glaciers, cover more than 50,000 km2 (20,000 mile2). Several kilometers deep, they obscure the underlying topography. Only nunataks protrude from the surface. The only extant ice sheets are the two that cover most of Antarctica and Greenland. These regions contain vast quantities of fresh water. The volume of ice is so large that if the Greenland ice sheet melted, it would cause sea levels to rise six meters (20 ft) all around the world. If the Antarctic ice sheet melted, sea levels would rise up to 65 meters (210 ft).</div>
+        </section>
+        <section>
+          <p>The ionosphere includes</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Mesosphere</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Thermosphere</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Thermosphere and exosphere</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Thermosphere, exosphere and mesosphere</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>The leading state in producing paper is</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Bihar</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>West Bengal</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Kerala</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Orissa</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+      </main>
+      <!-- Footer of Page-->
+      <footer class="chain footer"><span>www.example.com</span></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

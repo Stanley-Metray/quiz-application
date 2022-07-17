@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="canister">
+      <!-- Top Menu Bar-->
+      <div class="chain topMenu" id="topMenu"><span class="logo"><i>quiz.com</i></span>
+        <ul id="topMenuItems">
+          <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+          <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+          <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+          <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+          <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+          <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+        </ul>
+        <button class="toggleMenu"><i class="fas fa-bars" id="toggleTopMenu"></i></button>
+      </div>
+      <!-- Left Menu Bar-->
+      <nav class="chain leftMenu" id="leftMenu">
+        <ul>
+          <li><a id="loadCQuiz" href="maths-quiz.html">Maths Quiz</a></li>
+        </ul>
+      </nav>
+      <!-- Main Content i.e Quiz Quetions and Answers Section-->
+      <main class="chain main" id="main">
+        <section>
+          <p>What is the sum of 130+125+191?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>335</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>456</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>446</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>426</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>If we minus 712 from 1500, how much do we get?</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>788</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>778</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>768</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>758</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>50 times of 8 is equal to:</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>80</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>400</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>800</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>4000</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>110 divided by 10 is:</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>11</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>10</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>5</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of these</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>Find the missing terms in multiple of 3: 3, 6, 9, __, 15</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>10</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>11</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>12</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>13</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+      </main>
+      <!-- Footer of Page-->
+      <footer class="chain footer"><span>www.example.com</span></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

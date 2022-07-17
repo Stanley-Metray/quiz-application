@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="canister">
+      <!-- Top Menu Bar-->
+      <div class="chain topMenu" id="topMenu"><span class="logo"><i>quiz.com</i></span>
+        <ul id="topMenuItems">
+          <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+          <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+          <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+          <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+          <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+          <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+        </ul>
+        <button class="toggleMenu"><i class="fas fa-bars" id="toggleTopMenu"></i></button>
+      </div>
+      <!-- Left Menu Bar-->
+      <nav class="chain leftMenu" id="leftMenu">
+        <ul>
+          <li><a id="loadCQuiz" href="c-quiz.html">C Quiz</a></li>
+          <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+          <li><a href="java-quiz.html">Java Quiz</a></li>
+          <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+          <li><a href="html-quiz.html">HTML Quiz</a></li>
+          <li><a href="css-quiz.html">CSS Quiz</a></li>
+          <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+          <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+          <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+          <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+        </ul>
+      </nav>
+      <!-- Main Content i.e Quiz Quetions and Answers Section-->
+      <main class="chain main" id="main">
+        <section>
+          <p>Which of the following is the correct syntax to print the message in C++ language?</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>cout &lt;&lt;&quot;Hello world!&quot;;</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Cout &lt;&lt; Hello world! ;</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Out &lt;&lt;&quot;Hello world!;</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">To print the message in the C++ language user can use the following syntax:
+            <div class="program">
+              <pre style="font-family: monospace;">\n#include <iostream>  
+using namespace std;  
+int main() {  
+cout << "Hello World!";  
+cout << "I am learning C++";  
+return 0;  
+}                </pre>
+            </div>
+          </div>
+        </section>
+        <section>
+          <p>Which of the following is the address operator?</p>
+          <ul>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>@</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>#</span></li>
+            <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>&amp;</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>%</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">To print the address of any variable, a user can use the &quot;&amp;&quot; operator.</div>
+        </section>
+        <section>
+          <p>Which of the following features must be supported by any programming language to become a pure object-oriented programming language?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Encapsulation</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Inheritance</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Polymorphism</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">There is nothing that forces a user to use the OOP concept in C++. In contrast, it is necessary for a programming language that it must support all three features as encapsulation, inheritance, and polymorphism completely to become a pure Object-Oriented Language.</div>
+        </section>
+        <section>
+          <p>The programming language that has the ability to create new data types is called___.<br> &nbsp;&nbsp;&nbsp;&nbsp;If abcdefg is the input, the output will be</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Overloaded</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Encapsulated</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Reprehensible</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Extensible</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">A language that can generate the new data types is known as the extensible languages as they can handle the new data types.</div>
+        </section>
+        <section>
+          <p>Which of the following is the original creator of the C++ language?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Dennis Ritchie</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Ken Thompson</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Bjarne Stroustrup</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Brian Kernighan</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Bjarne Stroustrup creates C++ language during 1997 at AT&amp;T Bell Labs.</div>
+        </section>
+        <section>
+          <p>Which of the following is the correct syntax to read the single character to console in the C++ language?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Read ch()</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Getline vh()</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>get(ch)</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Scanf(ch)</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">The &quot;cin.get()&quot; is one of the several functions provided in C++ language that is used to read the single or multiple characters to console.</div>
+        </section>
+        <section>
+          <p>Which of the following statements is correct about the formal parameters in C++?</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Parameters with which functions are called</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Parameters which are used in the definition of the function</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Variables other than passed parameters in a function</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Variables that are never used in the function</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Parameters that are used in the body of the function are known as formal parameters. These parameters represent the parameters passed to the function and are only used inside the function&apos;s body.</div>
+        </section>
+        <section>
+          <p>The C++ language is ______ object-oriented language.</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Pure Object oriented</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Not Object oriented</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Semi Object-oriented or Partial Object-oriented</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">The common thing about the Pure Object-oriented language it provides three basic features like Inheritance, Encapsulation, and Polymorphism. Each programming language that supports these entire three features is known as the Pure-Object oriented language. Whereas if a programming language support all these three features but not support completely are known as the Partial-Object oriented languages or the Semi Object-oriented languages</div>
+        </section>
+        <section>
+          <p>Which one of the following is a loop construct that will always be executed once?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>for</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>while</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>switch</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>do while</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">The body of a loop is often executed at least once during the do-while loop. Once the body is performed, the condition is tested. If the condition is valid, it will execute the body of a loop; otherwise, control is transferred out of the loop.</div>
+        </section>
+        <section>
+          <p>How many characters can a string hold when declared as follows?</p>
+          <div class="program">
+            <pre style="font-family: monospace;">\nchar name[20]:                </pre>
+          </div>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>18</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>19</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>20</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the these</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>Directives are translated by the</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Pre-processor</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Compiler</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Linker</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Editor</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">In C language, the pre-processor is a macro processor that is dynamically used by the C programmer to modify the program before it is properly compiled (Before construction, pro-processor directives are implemented).</div>
+        </section>
+      </main>
+      <!-- Footer of Page-->
+      <footer class="chain footer"><span>www.example.com</span></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

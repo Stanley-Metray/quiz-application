@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p> CSS stands for -</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Cascade style sheets</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Color and style sheets</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Cascading style sheets</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">CSS stands for Cascading Style Sheet. CSS is used to design HTML tags. CSS is a widely used language on the web. HTML, CSS and JavaScript are used for web designing. It helps the web designers to apply style on HTML tags.</div>
+            </section>
+
+            <section>
+                <p>The property in CSS used to change the background color of an element is -</p>
+                <ul>
+                    <li><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>bgcolor</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>color</span></li>
+                    <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>background-color</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The background-color property is used to specify the background color of an element. The background of an element covers the total size, including the padding and border and excluding margin.</div>
+            </section>
+
+            <section>
+                <p>The property in CSS used to change the text color of an element is -</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>bgcolor</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>color</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>background-color</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The color property in CSS is used to set the color of HTML elements. Typically, this property is used to set the font color of an element. In CSS, we use color values for specifying the color. We can also use this property for the border-color and other decorative effects.</div>
+            </section>
+        
+            <section>
+                <p>The CSS property used to control the element's font-size is -</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>text-style</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>text-size</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>font-size</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The font-size property in CSS is used to specify the height and size of the font. It affects the size of the text of an element. Its default value is medium and can be applied to every element.</div>
+            </section>
+
+            <section>
+                <p>The HTML attribute used to define the inline styles is -</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>style</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>styles</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>class</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">If you want to use inline CSS, you should use the style attribute to the relevant tag. The inline CSS is also a method to insert style sheets in HTML document. This method mitigates some advantages of style sheets so it is advised to use this method sparingly.</div>
+            </section>
+
+            <section>
+                <p>Which of the following CSS property is used to set the background image of an element?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>background-attachment</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>background-image</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>background-color</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The background-image property is used to set an image as a background of an element. By default the image covers the entire element.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is the correct syntax to make the background-color of all paragraph elements to yellow?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>p {background-color : yellow;}</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>p {background-color : #yellow;}</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>all {background-color : yellow;}</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>all p {background-color : #yellow;}</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The background-color property in CSS is used to change the background color of an element. The correct syntax to make the background color of all paragraph elements to yellow is: p {background-color : yellow;}.</div>
+            </section>
+
+            <section>
+                <p>Which of the following property is used as the shorthand property for the padding properties?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>padding-left</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>padding-right</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>padding</span></li>
+                    <li  class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">CSS padding property is used to define the space between the element content and the element border. Top, bottom, left and right padding can be changed independently using separate properties. By using the shorthand padding property we can also change all padding properties at once.</div>
+            </section>
+
+            <section>
+                <p>The CSS property used to make the text bold is -</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>font-weight : bold</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>weight: bold</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>font: bold</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>style: bold</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The font-weight property is used for setting the thickness and boldness of the font. It is used to define the weight of the text. The available weight depends on the font-family, which is used by the browser.</div>
+            </section>
+
+            <section>
+                <p>Are the negative values allowed in padding property?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Yes</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>No</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Can't say</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>May be</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The negative values are not allowed when using the padding property.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

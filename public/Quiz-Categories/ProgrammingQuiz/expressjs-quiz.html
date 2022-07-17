@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressJs Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>Who is credited as the developer of Express.js?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Larry wall</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Rich Hickey</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>TJ Holowaychuk</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Rob Pike</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">C is the correct option. TJ Holowaychuk is credited as the developer of Express.js.</div>
+            </section>
+
+            <section>
+                <p>Which of the following are the core features of the Express framework?</p>
+                <ul>
+                    <li><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>It allows us to set up middleware to respond to HTTP Requests.</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>It defines a routing table that can work as per HTTP Method and URL.</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>It is used to render the HTML pages dynamically.</span></li>
+                    <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>All of the above.</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">D is the correct option. All of the above are the core features of the Express framework.</div>
+            </section>
+
+            <section>
+                <p>In which of the following year was Express.js initially released?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>November 2010</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>November 2011</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>December 2010</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>December 2011</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. Express.js was initially released in November, 2010.</div>
+            </section>
+        
+            <section>
+                <p>Which of the following command is used to install the Node.js express module?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ npm install express</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ node install express</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>$ install express</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. The $ npm install express command is used to install the Node.js express module.</div>
+            </section>
+
+            <section>
+                <p>In combination with a request method, root paths define the endpoints at which requests can be made. Which of the following are valid forms of route path?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>strings</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>string patterns</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>regular expressions</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">D is the correct option. All of the above are valid forms of the route path.</div>
+            </section>
+
+            <section>
+                <p>Which of the following extension is used to save the Node.js files?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.js</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.node</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.java</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>.txt</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. The ".js" extension is used to save the Node.js files.</div>
+            </section>
+
+            <section>
+                <p>Where are the captured values populated regarding the route parameters?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>req.data</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>app.locals</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>req.params</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">C is the correct option. The captured values are populated at req.params.</div>
+            </section>
+
+            <section>
+                <p>How is it possible to create chainable route handlers for a route path in Express.js?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Using app.route()</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Using app.routes()</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Using app.router()</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Using app.routing()</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A is the correct option. By using app.route() method, we can create chainable route handlers for a route path in Express.js.</div>
+            </section>
+
+            <section>
+                <p>Which of the following function arguments are available to Express.js Route handlers?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>req - the request object</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>res - the response object</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>next</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>All of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">D is the correct option. All of the above function arguments are available to Express.js Route handlers.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is the Scaffolding in Express.js?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Yeoman</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Express application generator</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Handler functions</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Both A & B</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">D is the correct option because both A and B as Yeoman and Express application generator are the Scaffolding in Express.js.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

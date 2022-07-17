@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>How can we describe an array in the best possible way?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The Array shows a hierarchical structure.</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Arrays are immutable.</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Container that stores the elements of similar types</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The Array is not a data structure</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is c because array stores the elements in a contiguous block of memory of similar types. Therefore, we can say that array is a container that stores the elements of similar types.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is the correct way of declaring an array?</p>
+                <ul>
+                    <li class="true black"><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>int javatpoint[10];</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>int javatpoint;</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>javatpoint{20};</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>array javatpoint[10];</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is a because int specifies the type of the array, javatpoint is the name of the array, and 10 is the size of the array enclosed within the square brackets.</div>
+            </section>
+
+            <section>
+                <p>How can we initialize an array in C language?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>int arr[2]=(10, 20)</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>int arr(2)={10, 20}</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>int arr[2] = {10, 20}</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>int arr(2) = (10, 20)</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is c because the values assigned to the array must be enclosed within a curly bracket.</div>
+            </section>
+        
+            <section>
+                <p>Which of the following is the advantage of the array data structure?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Binary Search tree</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Caching</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Spatial locality</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Scheduling of Processes</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is c, i.e., Spatial locality. Here, spatial locality means that the instruction accessed recently, then the nearby memory location would be accessed in the next iteration. As we know that in an array, all the elements are stored in a contiguous block of memory, so spatial locality is accessed quickly.</div>
+            </section>
+
+            <section>
+                <p>Which one of the following is the size of int arr[9] assuming that int is of 4 bytes?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>9</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>36</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>35</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is b because the size of int type data is 4 bytes. The array stores 9 elements, so the size of the array is 9*4=36 bytes.</div>
+            </section>
+
+            <section>
+                <p>Which one of the following is the process of inserting an element in the stack?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Insert</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Add</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Push</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is c. In stack, the process of inserting an element is known as a push operation.</div>
+            </section>
+
+            <section>
+                <p>When the user tries to delete the element from the empty stack then the condition is said to be a ____</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Underflow</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Garbage collection</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Overflow</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is a. Underflow is a condition that occurs when user tries to implement the pop operation in the empty stack.</div>
+            </section>
+
+            <section>
+                <p>If the size of the stack is 10 and we try to add the 11th element in the stack then the condition is known as___</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Underflow</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Garbage collection</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Overflow</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is c because the stack is full with its 10 elements, and inserting one more element in a stack will lead to the stack overflow.</div>
+            </section>
+
+            <section>
+                <p>Which one of the following is not the application of the stack data structure</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>String reversal</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Recursion</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Backtracking</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Asynchronous data transfere</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is d. The first three options are the stack applications, but option d is not a stack application. The queue data structure is used for synchronization between the processes.</div>
+            </section>
+
+            <section>
+                <p>Which data structure is mainly used for implementing the recursive algorithm?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Queue</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Stack</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Binary tree</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Linked list</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The answer is b. Recursion means calling the function itself again. Stack is used to maintain the previous records of the function.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

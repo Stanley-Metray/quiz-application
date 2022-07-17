@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancient Indian Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="canister">
+      <!-- Top Menu Bar-->
+      <div class="chain topMenu" id="topMenu"><span class="logo"><i>quiz.com</i></span>
+        <ul id="topMenuItems">
+          <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+          <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+          <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+          <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+          <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+          <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+        </ul>
+        <button class="toggleMenu"><i class="fas fa-bars" id="toggleTopMenu"></i></button>
+      </div>
+      <!-- Left Menu Bar-->
+      <nav class="chain leftMenu" id="leftMenu">
+        <ul>
+          <li><a id="loadCQuiz" href="ancient-india-quiz.html">Ancient India Quiz</a></li>
+          <li><a href="modern-india-quiz.html">Modern-India-Quiz</a></li>
+        </ul>
+      </nav>
+      <!-- Main Content i.e Quiz Quetions and Answers Section-->
+      <main class="chain main" id="main">
+        <section>
+          <p>Which among the following Rock Edicts of Asoka discusses about the Dhamma’s impact on society?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Rock Edict I</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Rock Edict II</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span> Rock Edict III</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Rock Edict IV</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Rock Edict IV also describes that the Dhammaghosa is ideal to the mankind and not the Bherighosa.</div>
+        </section>
+        <section>
+          <p>The teaching of Mahavira was compiled by …</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Gautama Swami</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Sudharma</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Karnputra</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Sudama Jain</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Gautama Swami was the chief disciple of Mahavira.</div>
+        </section>
+        <section>
+          <p>The three Vedas namely Rig, Yajur, and Sama collectively is known as:</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Sruti</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Trayi Veda</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Trijnana</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Samhitas</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">All three Vedas namely Rig, Yajur, and Sama all together known as Trayi Veda.</div>
+        </section>
+        <section>
+          <p>Which among the following is not the Buddha’s truth?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The world is full of sorrows</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Desires cause all sorrows</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>If desires are conquered, all sorrows can be removed</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Follow the desire to conquer it</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Desires can be conquered by following the Noble Eightfold Path.</div>
+        </section>
+        <section>
+          <p>Who among the following queens opposed the extraordinary generosity of Asoka to the Buddhists?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Divyatejita</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Padmavati</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Asandhimitta</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Tissarakkha</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Tissarakkha was the fifth queen of Asoka whom he married four years before his death.</div>
+        </section>
+        <section>
+          <p>Rudradaman was a ………… king.</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span> Saka</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Satavahana</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Kanva</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Kushan</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">The Saka king Rudradaman ruled from 130 AD to 150 AD.</div>
+        </section>
+        <section>
+          <p>Which one of the following period is the oldest?</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Neolithic</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Iron age</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Bronze age</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span> Chalcolithic</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Among all, Neolithic is the oldest one.</div>
+        </section>
+        <section>
+          <p>Who among the following Satavahana rulers had written ‘Vrihat Katha?’</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Gautamiputra Satakarni</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Simuka</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Hala</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Gunadhya</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>Who among the following had adopted the title of ‘Adivaraha?’</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Dharmpala</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Bhoja</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Dantidurga</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Nagapala</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Bhoja was the greatest Pratihara ruler, he was a great devotee of Lord Vishnu.</div>
+        </section>
+        <section>
+          <p> Which one of the following sites had the evidence of the earliest ploughed field?</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Kalibangan</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Mohanjodaro</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Harappa</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Rangpur</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Most likely, Kalibangan people were the first who started the practice of cultivation by ploughing the field.</div>
+        </section>
+      </main>
+      <!-- Footer of Page-->
+      <footer class="chain footer"><span>www.example.com</span></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

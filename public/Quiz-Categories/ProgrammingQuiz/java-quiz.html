@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>Which of the following option leads to the portability and security of Java?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Bytecode is executed by JVM</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The applet makes the Java code secure and portable</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Use of exception handling</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Dynamic binding between objects</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">Bytecode is executed by the JVM.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is not a Java features?</p>
+                <ul>
+                    <li><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>Dynamic</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Architecture Neutral</span></li>
+                    <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Use of pointers</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Object-oriented</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">To print the address of any variable, a user can use the "&" operator.</div>
+            </section>
+
+            <section>
+                <p>_____ is used to find and fix bugs in the Java programs.</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>JVM</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>JRE</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>JDK</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>JDB</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The Java Debugger (JDB or jdb) is a command-line java debugger that debugs the java class. It is a part of the Java Platform Debugger Architecture (JPDA) that helps in the inspections and debugging of a local or remote Java Virtual Machine (JVM).
+
+                    The JVM (Java Virtual Machine) enables a computer to run Java or other language (kotlin, groovy, Scala, etc.) programs that are compiled to the Java bytecode. The JRE (Java Runtime Environment) is a part of JDK that contains the Java class libraries, Java class loader, and the Java Virtual Machine. The JDK (Java Development Kit) is a software development environment used to develop Java applications and applets.</div>
+            </section>
+        
+            <section>
+                <p>What is the return type of the hashCode() method in the Object class?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Object</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>int</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>long</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>void</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In Java, the return type of hashCode() method is an integer, as it returns a hash code value for the object.</div>
+            </section>
+
+            <section>
+                <p>What does the expression float a = 35 / 0 return?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>0</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Not a Number</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Infinity</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Run time exception</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In Java, whenever we divide any number (double, float, and long except integer) by zero, it results in infinity. According to the IEEE Standard for Floating-Point Arithmetic (IEEE 754), if we divide 1/0 will give positive infinity, -1/0 will give negative infinity, and 0/0 will give NaN. But on dividing an integer by zero, it throws a runtime exception, i.e., java.lang.ArithmeticException.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is true about the anonymous inner class?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>It has only methods</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Objects can't be created</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>It has a fixed class name</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>It has no class name</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">Anonymous inner classes are the same as the local classes except that they don't have any name. The main use of it is to override methods of classes or interfaces. And the rest three options are false about the anonymous inner classes as it can have both methods and objects. It does not have any fixed came name.</div>
+            </section>
+
+            <section>
+                <p>Which package contains the Random class?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>java.util package</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>java.lang package</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>java.awt package</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>java.io package</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The Random class is available in the java.util package. An object of the Random class is used to generate a series of pseudorandom numbers. And the object of this class is a thread-safe and cryptographically insecure object. The Random class provides a variety of methods that are used to create random numbers of type integers, float, long, double, etc.</div>
+            </section>
+
+            <section>
+                <p>Which of the following is an immediate subclass of the Panel class?</p>
+                <ul>
+                    <li  class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Applet class</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Window class</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Frame class</span></li>
+                    <li><i onclick="checkAnswer(event)"></i> <span>Dialog class</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">According to the class hierarchy of Java Swing, the Applet class is the direct subclass of the Panel class. You can go through the link, (https://www.javatpoint.com/java-swing) to deeply understand the class hierarchy diagram. The Panel class and Window class are the child classes of the Container class, and Frame and Dialog classes are the subclasses of the Window class.</div>
+            </section>
+
+            <section>
+                <p>What do you mean by chained exceptions in Java?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Exceptions occurred by the VirtualMachineError</span></li>
+                    <li  class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>An exception caused by other exceptions</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Exceptions occur in chains with discarding the debugging information</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In Java, an exception caused by other exceptions is known as a chained exception. Generally, the first exception causes the second exception. It helps in identifying the cause of the exception. In chained exceptions, the debugging information is not discarded.</div>
+            </section>
+
+            <section>
+                <p>In which memory a String is stored, when we create a string using new operator?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Stack</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>String memory/span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Heap memory</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Random storage space</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">When a String is created using a new operator, it always created in the heap memory. Whereas when we create a string using double quotes, it will check for the same value as of the string in the string constant pool. If it is found, returns a reference of it else create a new string in the string constant pool.</div>
+            </section>
+        
+            <section>
+                <p>What is the use of the intern() method?</p>
+                <ul>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>It returns the existing string from memory</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>It creates a new string in the database</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>It modifies the existing string in the database</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The intern() method is used to return the existing strings from the database. In other words, the intern() method returns a reference of the string. For example, if the string constant pool already has a string object with the same value, the intern() method will return a reference of the string from the pool.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

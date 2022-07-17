@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div class="canister">
+      <!-- Top Menu Bar-->
+      <div class="chain topMenu" id="topMenu"><span class="logo"><i>quiz.com</i></span>
+        <ul id="topMenuItems">
+          <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+          <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+          <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+          <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+          <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+          <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+        </ul>
+        <button class="toggleMenu"><i class="fas fa-bars" id="toggleTopMenu"></i></button>
+      </div>
+      <!-- Left Menu Bar-->
+      <nav class="chain leftMenu" id="leftMenu">
+        <ul>
+          <li><a id="loadCQuiz" href="science-quiz.html">Science Quiz</a></li>
+        </ul>
+      </nav>
+      <!-- Main Content i.e Quiz Quetions and Answers Section-->
+      <main class="chain main" id="main">
+        <section>
+          <p>	
+            Which of the following is a non metal that remains liquid at room temperature?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Phosphorous</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Bromine</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Chlorine</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Helium</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>Chlorophyll is a naturally occurring chelate compound in which central metal is</p>
+          <ul>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>copper</span></li>
+            <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>magnesium</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>iron</span></li>
+            <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>calcium</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>Which of the following is used in pencils?</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Graphite</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Silicon</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Charcoal</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Phosphorous</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>Which of the following metals forms an amalgam with other metals?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Tin</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Mercury</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Lead</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Zinc</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>The gas usually filled in the electric bulb is</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>nitrogen</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>hydrogen</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>carbon dioxide</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>oxygen</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>Washing soda is the common name for</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Sodium carbonate</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Calcium bicarbonate</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Sodium bicarbonate</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Calcium carbonate</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">Sodium carbonate (also known as washing soda or soda ash), Na2CO3 is a sodium salt of carbonic acid.</div>
+        </section>
+        <section>
+          <p>Quartz crystals normally used in quartz clocks etc. is chemically</p>
+          <ul>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>silicon dioxide</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>germanium oxide</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>a mixture of germanium oxide and silicon dioxide</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>sodium silicate</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">No answer description available for this question.</div>
+        </section>
+        <section>
+          <p>Which of the gas is not known as green house gas?</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Methane</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Nitrous oxide</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Carbon dioxide</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Hydrogen</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>Bromine is a</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>black solid</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>red liquid</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>red liquid</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>highly inflammable gas</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+        <section>
+          <p>The hardest substance available on earth is</p>
+          <ul>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Gold</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Iron</span></li>
+            <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Diamond</span></li>
+            <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Platinum</span></li>
+          </ul>
+          <button class="btn-check-answer">Check Answer</button>
+          <div class="answer">None</div>
+        </section>
+      </main>
+      <!-- Footer of Page-->
+      <footer class="chain footer"><span>www.example.com</span></footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>

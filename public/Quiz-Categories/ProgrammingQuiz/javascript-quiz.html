@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="shortcut icon" href="./icons/android-icon-48x48.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ac5bf9eb63.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="canister">
+
+        <!-- Top Menu Bar -->
+        <div class="chain topMenu" id="topMenu">
+            <span class="logo"><i>quiz.com</i></span>
+            <ul id="topMenuItems" class="">
+                <li id="programming-quiz"><i class="fas fa-code"></i> <a href="c-quiz.html">Programming Quiz</a></li>
+                <li><i class="fas fa-university"></i> <a href="ancient-india-quiz.html">History Quiz</a></li>
+                <li><i class="fas fa-book-open"></i> <a href="gk-quiz.html">GK Quiz</a></li>
+                <li><i class="fas fa-globe-asia"></i> <a href="zeography-quiz.html">Geography Quiz</a></li>
+                <li><i class="fas fa-flask"></i> <a href="science-quiz.html">Science Quiz</a></li>
+                <li><i class="fas fa-square-root-alt"></i> <a href="maths-quiz.html">Maths Quiz</a></li>
+            </ul>
+            <button class="toggleMenu"><i id="toggleTopMenu" class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Left Menu Bar -->
+
+        <nav class="chain leftMenu" id="leftMenu">
+            <ul>
+                <li><a href="c-quiz.html" id="loadCQuiz">C Quiz</a></li>
+                <li><a href="cpp-quiz.html">C++ Quiz</a></li>
+                <li><a href="java-quiz.html">Java Quiz</a></li>
+                <li><a href="javascript-quiz.html">JavaScript Quiz</a></li>
+                <li><a href="html-quiz.html">HTML Quiz</a></li>
+                <li><a href="css-quiz.html">CSS Quiz</a></li>
+                <li><a href="nodejs-quiz.html">Nodejs Quiz</a></li>
+                <li><a href="expressjs-quiz.html">ExpressJs Quiz</a></li>
+                <li><a href="mongodb-quiz.html">MongoDb Quiz</a></li>
+                <li><a href="data-structures-quiz.html">Data Structures Quiz</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content i.e Quiz Quetions and Answers Section -->
+        <main class="chain main" id="main">
+            
+            <section>
+                <p>Which type of JavaScript language is ___</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Object-Oriented</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Object-Based</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Assembly-language</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>High-level</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">JavaScript is not a pure OOP's (object oriented programming) based languages such as PHP, java or many other languages, although it is an object-based language. It is not OOP's based language, because it doesn't have three basic properties of object-oriented programming languages, such as polymorphism, encapsulation, and inheritance.</div>
+            </section>
+
+            <section>
+                <p>Which one of the following also known as Conditional Expression:</p>
+                <ul>
+                    <li><i name="male" class="far fa-square" onclick="checkAnswer(event)"></i> <span>Alternative to if-else</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>Switch statement</span></li>
+                    <li><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>If-then-else statement</span></li>
+                    <li class="true black"><i class="far fa-square" name="male" onclick="checkAnswer(event)"></i> <span>immediate if</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer"> A conditional expression can only evaluate two things, which either true or false, that are purely based on the evaluation of the condition</div>
+            </section>
+
+            <section>
+                <p>In JavaScript, what is a block of statement?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Conditional block</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>block that combines a number of statements into a single compound statement</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>both conditional block and a single statement</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>block that contains a single statement</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">A block of statement can be understand as the set of the zero or more statements. In general, a block of statement has common definition "which combines one or a number of statements into a single statement for ease.</div>
+            </section>
+        
+            <section>
+                <p>When interpreter encounters an empty statements, what it will do:</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Shows a warning</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Prompts to complete the statement</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Throws an error</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Ignores the statements</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In JavaScript, when the interpreter encounters a empty statements it normally ignores or not response to that empty statement. The empty statements also sometimes very useful like we use the empty statements for creating loop for nothing.</div>
+            </section>
+
+            <section>
+                <p>The "function" and " var" are known as:</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Keywords</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Data types</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Declaration statements</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Prototypes</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The "function" and "var" both are the Declaration statements. These both are used for defining, and declaring variable, function in anywhere in the program.</div>
+            </section>
+
+            <section>
+                <p>Which of the following variables takes precedence over the others if the names are the same?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Global variable</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The local element</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>The two of the above</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>None of the above</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In JavaScript, the local variable takes precedence over the global variable if the name of both local and global variables is the same.</div>
+            </section>
+
+            <section>
+                <p>Which one of the following is the correct way for calling the JavaScript code?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Preprocessor</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Triggering Event</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>RMI</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Function/Method</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The JavaScript code can be called simply by making the function call to the element on which the JavaScript code execution has to be run. There are several other ways to call JavaScript code such as submit, onclick, and onload, etc.</div>
+            </section>
+
+            <section>
+                <p>Which of the following type of a variable is volatile?</p>
+                <ul>
+                    <li  class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Mutable variable</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Dynamic variable</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Volatile variable</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Immutable variable</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">The variables whose value can be modified that kind of variable are known as Mutable variable. In the JavaScript, only arrays and objects are mutable but not the primitive values.</div>
+            </section>
+
+            <section>
+                <p>Which of the following option is used as hexadecimal literal beginning?</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>00</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>0x</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>0X</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Both 0x and 0X</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In general, the X and x both can be used to denote the hexadecimal values, so any integer literal that begins with either 0X or 0x denotes a hexadecimal number.</div>
+            </section>
+
+            <section>
+                <p>When there is an indefinite or an infinite value during an arithmetic computation in a program, then JavaScript prints______.</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Prints an exception error</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Prints an overflow error</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Displays "Infinity"</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Prints the value as such</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">In the case, where the result of any arithmetic expression is beyond the largest represent-able number,JavaScript prints the infinity. Similarly, if the result of any numerical operation is beyond the largest negative number, JavaScript prints negative infinity.</div>
+            </section>
+        
+            <section>
+                <p>In the JavaScript, which one of the following is not considered as an error:</p>
+                <ul>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Syntax error</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Missing of semicolons</span></li>
+                    <li class="true black"><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Division by zero</span></li>
+                    <li><i class="far fa-square" onclick="checkAnswer(event)"></i> <span>Missing of Bracket</span></li>
+                </ul>
+                <button class="btn-check-answer">Check Answer</button>
+                <div class="answer">Yes, you heard right that division of any integer by zero is not an error in the JavaScript. It just prints the infinity as a result. However, there is an exception in JavaScript, dividing zero with zero will not have any defined number/value so, the result of this specific operation is a special value "Not a Number" (or NaN) and printed as NaN.</div>
+            </section>
+        
+        </main>
+
+
+        <!-- Footer of Page -->
+        <footer class="chain footer">
+            <span>www.example.com</span>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
